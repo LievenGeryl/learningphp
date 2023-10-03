@@ -7,8 +7,18 @@
 </head>
 <body>
     <?php
-        $someVar = 'hello world';
-        echo $someVar;
+        $some_string = 'hello world';
+
+        $some_bool = False;
+
+    if($some_bool)
+    {
+        echo 'Wow, some_bool was true!';
+    }
+    else
+    {
+        echo $some_var;
+    }
     ?>
 </body>
 </html>
