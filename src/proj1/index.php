@@ -34,13 +34,14 @@
                 $this->age = $age;
             }
 
+
             public function GetName()
             {
                 return $this->name;
-            }
+            }     
 
-            public function DoesSomething(){
-                echo $this->name . " is doing something.";
+            public function DoesSomething() : string{
+                return $this->name. " is doing something.";
             }
 
         }
@@ -48,6 +49,8 @@
         echo $bob->name;
         echo $bob->age;
         echo $bob->DoesSomething();
+        $test = $bob->GetName();
+
         $dsn = "hello world"; //connection string
         $test = new PDO($dsn);
 
